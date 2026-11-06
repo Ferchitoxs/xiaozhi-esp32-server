@@ -1,0 +1,26 @@
+selected_module:
+  VAD: SileroVAD
+  ASR: GroqASR
+  LLM: GroqLLM
+  TTS: EdgeTTS
+  Memory: nomem
+  Intent: nointent
+
+LLM:
+  GroqLLM:
+    type: openai
+    base_url: https://api.groq.com/openai/v1
+    model_name: llama-3.3-70b-versatile
+    api_key: "escribe_aqui_tu_clave"  # <-- PEGA TU CLAVE GSK DE GROQ
+
+ASR:
+  GroqASR:
+    type: openai
+    api_key: "escribe_aqui_tu_clave"  # <-- PEGA TU CLAVE GSK DE GROQ
+    base_url: https://api.groq.com/openai/v1/audio/transcriptions
+    model_name: whisper-large-v3-turbo
+
+TTS:
+  EdgeTTS:
+    type: edge
+    voice: es-AR-ElenaNeural
