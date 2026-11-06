@@ -11,6 +11,7 @@ from core.websocket_server import WebSocketServer
 from core.utils.util import check_ffmpeg_installed
 from core.utils.gc_manager import get_gc_manager
 from core.handle.helloHandle import preheat_wakeup_audio_cache
+from render_proxy import start_proxy
 
 TAG = __name__
 logger = setup_logging()
