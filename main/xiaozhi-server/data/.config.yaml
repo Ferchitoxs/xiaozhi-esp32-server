@@ -24,3 +24,6 @@ TTS:
   EdgeTTS:
     type: edge
     voice: es-AR-ElenaNeural
+
+server:
+  websocket: "wss://xiaozhi-esp32-server-b1c7.onrender.com/xiaozhi/v1/"
