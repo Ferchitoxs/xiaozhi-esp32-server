@@ -148,6 +148,8 @@ async def main():
             timeout=3.0,
             return_when=asyncio.ALL_COMPLETED,
         )
+        await proxy_runner.cleanup()
+        
         print("服务器已关闭，程序退出。")
 
 
